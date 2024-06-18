@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3 *ngIf="invalid" >Invalid Username or password</h3>
+        <div class="container">
+            Name : <input type="text" [(ngModel)]="name">
+            password : <input type="password" [(ngModel)]="password">
+            <button (click) = validation()>Click me</button>
+        </div>
+    </div>
+</body>
+</html>
