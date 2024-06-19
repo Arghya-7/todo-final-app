@@ -1,4 +1,8 @@
 <div class="container">
     <h3>Welcome {{name}}</h3>
     Click <a routerLink="/tables">here</a> to view todos
+    <button (click)="connectToBackend()" class=".btn">Connect to spring boot</button>
+</div>
+<div class="container" *ngIf="valuePresent">
+    <p>Message from future for you: <b>{{message}}</b></p>
 </div>

@@ -12,6 +12,7 @@ import { TodoInfoComponent } from './todo-info/todo-info.component';
 import { FormsModule } from '@angular/forms';
 import { LogoutComponent } from './logout/logout.component';
 import { ErrorpageComponent } from './errorpage/errorpage.component';
+import { HttpClientModule, provideHttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ErrorpageComponent } from './errorpage/errorpage.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
