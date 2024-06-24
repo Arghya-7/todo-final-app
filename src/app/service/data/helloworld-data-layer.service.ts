@@ -15,4 +15,11 @@ export class HelloworldDataLayerService {
   getMessage(){
     return this.http.get<HelloWorldBean>("http://localhost:8080/helloworld");
   }
+
+  getErrorMessage(){
+    return this.http.get<HelloWorldBean>("http://localhost:8080/helloworld-error");
+  }
+  useParameterMessage(message:string){
+    return this.http.get<HelloWorldBean>(`http://localhost:8080/useparameter/${message}`);
+  }
 }

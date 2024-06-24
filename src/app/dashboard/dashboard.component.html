@@ -3,6 +3,21 @@
     Click <a routerLink="/tables">here</a> to view todos
     <button (click)="connectToBackend()" class=".btn">Connect to spring boot</button>
 </div>
+
+<div class="container">
+    <button (click)="connectToBackendToGetErrorMessage()" class=".btn">Display error message</button>
+</div>
+
+<div class="container">
+    <button (click)="useParametarizedArgument()" class=".btn">Use parameter for api calling</button>
+</div>
+
 <div class="container" *ngIf="valuePresent">
     <p>Message from future for you: <b>{{message}}</b></p>
+</div>
+
+
+
+<div class="container" *ngIf="error">
+    <p>{{errorMessage}}</p>
 </div>
